@@ -1,7 +1,8 @@
 import pandas as pd
 import numpy as np
 
-df=pd.read_csv('Data\\titanic_mixed.csv')
+df=pd.read_csv('Data\\Titanic_mixed.csv')
+# print(df.head())
 df=df.rename(columns={'number':'Number'})
 
 df['Number_numeric']=pd.to_numeric(df['Number'],errors='coerce',downcast='integer')
